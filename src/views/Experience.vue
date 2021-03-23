@@ -2,6 +2,7 @@
   <div class="experience">
     <div class="experience-container">
       <h1 class="experience-header">Education.</h1>
+      <div class="bar"></div>
       <ul class="experience-list">
         <li class="experience-list-item">
           <h2>Associate in Information Technology</h2>
@@ -11,6 +12,7 @@
       </ul>
 
       <h1 class="experience-header">Experience.</h1>
+      <div class="bar"></div>
       <ul class="experience-list">
         <li class="experience-list-item">
           <h2>Software Engineer</h2>

@@ -2,23 +2,33 @@
   position: absolute;
   width: 100%;
   top: 0;
+  text-align: left;
   /* border: 1px solid red; */
 }
 
 .experience-container {
   padding: 90px 30px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
 }
 
 .experience-header {
   padding-bottom: 5px;
-  border-bottom: 2px solid #bbe1fa;
+  text-align: left;
+  width: 100%;
+  /* border-bottom: 2px solid #bbe1fa; */
 }
 
 .experience-list {
   text-align: left;
   list-style: none;
   margin-bottom: 30px;
+  width: 100%;
   /* border-bottom: 2px solid #bbe1fa; */
   /* background-color: #bbe1fa;
   color: #1b262c;
@@ -35,4 +45,16 @@
 
 .experience-list-item-bullets {
   padding-left: 25px;
+}
+
+.bar {
+  justify-content: center;
+  border-bottom: 2px solid #bbe1fa;
+  width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .experience-container {
+    width: 100%;
+  }
 }
