@@ -13,12 +13,46 @@
     >
       <router-view />
     </transition>
+    <div class="footer">
+      <button class="hamburger-menu" @click="footerToggled = !footerToggled">
+        <span class="hamburger-menu-bar"></span>
+        <span class="hamburger-menu-bar"></span>
+        <span class="hamburger-menu-bar"></span>
+      </button>
+      <transition
+        name="router-anim"
+        enter-active-class="animated fadeInRightBig"
+        leave-active-class="animated fadeOutRightBig"
+      >
+        <div v-if="footerToggled" class="footer-content">
+          <button
+            class="close-button"
+            type="button"
+            @click="footerToggled = !footerToggled"
+          >
+            &#10799;
+          </button>
+          <p>
+            <a href="https://github.com/shookstra/my-portfolio" target="_blank"
+              >Created</a
+            >
+            by me using Vue.js
+          </p>
+        </div>
+      </transition>
+    </div>
   </div>
 </template>
 
 <script>
 import "@/styles/global.css";
-export default {};
+export default {
+  data() {
+    return {
+      footerToggled: false,
+    };
+  },
+};
 </script>
 
 <style>
