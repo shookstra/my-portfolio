@@ -1,4 +1,5 @@
 # my-portfolio
+My personal portfolio site created using Vue.js  
 
 ## Project setup
 ```
