@@ -73,5 +73,7 @@
 
 <script>
 import "@/styles/experience.css";
-export default {};
+export default {
+  title: "Sam Hookstra Portfolio | Experience",
+};
 </script>

@@ -85,5 +85,7 @@
 import "@/styles/global.css";
 import "@/styles/projects.css";
 
-export default {};
+export default {
+  title: "Sam Hookstra Portfolio | Projects",
+};
 </script>

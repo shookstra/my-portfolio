@@ -16,20 +16,15 @@
     <div class="headshot-container">
       <img src="../assets/headshot.jpeg" height="500" class="headshot" />
     </div>
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
 
 <script>
 import "@/styles/home.css";
 
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    // HelloWorld,
-  },
+  title: "Sam Hookstra Portfolio | Home",
+  components: {},
 };
 </script>

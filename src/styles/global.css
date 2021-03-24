@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lexend", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -9,7 +12,6 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  /* border: 5px solid blue; */
 }
 
 #app {
@@ -20,7 +22,6 @@ body {
   color: #d3d3d3;
   height: 100%;
   position: relative;
-  /* border: 5px solid yellow; */
 }
 
 #nav {
@@ -28,7 +29,6 @@ body {
   position: relative;
   height: 70px;
   padding: 20px 0px;
-  /* border: 1px solid red; */
 }
 
 #nav a {

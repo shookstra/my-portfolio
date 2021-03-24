@@ -3,7 +3,6 @@
   height: 100%;
   position: absolute;
   top: 0;
-  /* border: 2px solid blueviolet; */
 }
 
 .home-content-container {
@@ -14,7 +13,6 @@
   justify-content: center;
   text-align: left;
   padding: 0px 150px;
-  /* border: 2px solid blueviolet; */
   box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
@@ -36,7 +34,6 @@
 }
 
 .headshot {
-  /* margin-right: 100px; */
   border-radius: 10px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25),
     15px 15px 25px 0px rgba(0, 0, 0, 0.1);

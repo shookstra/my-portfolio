@@ -9,6 +9,7 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: { title: "Sam Hookstra - Portfolio" },
   },
   {
     path: "/experience",
@@ -23,11 +24,13 @@ const routes = [
     path: "/projects",
     name: "Projects",
     component: () => import("../views/Projects.vue"),
+    meta: { title: "Sam Hookstra - Portfolio" },
   },
   {
     path: "/contact",
     name: "Contact",
     component: () => import("../views/Contact.vue"),
+    meta: { title: "Sam Hookstra - Portfolio" },
   },
 ];
 
