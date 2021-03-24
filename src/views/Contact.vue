@@ -107,6 +107,16 @@
           </button>
         </div>
       </transition>
+      <transition
+        name="success-message-animation"
+        enter-active-class="animated zoomIn"
+        leave-active-class="animated zoomOut"
+      >
+        <h3 v-if="requestSent">
+          Thank you for submitting a contact form! I will get back to you as
+          soon as possible.
+        </h3>
+      </transition>
       <button class="contact-form-submit" @click="validateInputs">
         Submit
       </button>
@@ -137,29 +147,31 @@ export default {
         message: "",
         request: "",
       },
+      requestSent: false,
     };
   },
   methods: {
     validateInputs() {
+      this.requestSent = false;
       // used this stackoverflow article to find an email regex:
       // https://stackoverflow.com/questions/49917664/regex-pattern-html-email
       let emailRegex = new RegExp(
         "(?!test@test.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}.[a-z]{2,}(?:.[a-z]{2,})?"
       );
 
-      if (!this.form.name) {
+      if (!this.form.name.trim()) {
         this.errors.name = "Please enter your name.";
       } else {
         this.errors.name = "";
       }
-      if (!this.form.email) {
+      if (!this.form.email.trim()) {
         this.errors.email = "Please enter your email.";
       } else if (emailRegex.exec(this.form.email) === null) {
         this.errors.email = "Please enter a valid email.";
       } else {
         this.errors.email = "";
       }
-      if (!this.form.message) {
+      if (!this.form.message.trim()) {
         this.errors.message = "Please enter a message.";
       } else {
         this.errors.message = "";
@@ -192,6 +204,7 @@ export default {
           )
           .then((response) => {
             console.dir(response);
+            this.requestSent = true;
           })
           .catch((error) => {
             console.error(error.message);
