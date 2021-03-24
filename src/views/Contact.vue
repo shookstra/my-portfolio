@@ -7,6 +7,7 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       class="contact-form"
+      @submit.prevent="handleSubmit"
     >
       <input type="hidden" name="form-name" value="ask-question" />
       <div class="contact-form-section">
@@ -14,7 +15,7 @@
         <input
           type="text"
           name="name"
-          v-model="name"
+          v-model="form.name"
           placeholder="Enter your name..."
           class="contact-form-text-field"
         />
@@ -24,7 +25,7 @@
         <input
           type="text"
           name="email"
-          v-model="email"
+          v-model="form.email"
           placeholder="Enter your email..."
           class="contact-form-text-field"
         />
@@ -33,7 +34,7 @@
         <label for="name" class="contact-form-label">Message</label>
         <textarea
           name="message"
-          v-model="message"
+          v-model="form.message"
           placeholder="Send me a message..."
           class="contact-form-text-field"
         />
@@ -46,23 +47,48 @@
       <a href="https://www.linkedin.com/in/sam-hookstra-686b741a5">LinkedIn</a>
     </p>
 
-    <p>{{ name }}</p>
-    <p>{{ email }}</p>
-    <p>{{ message }}</p>
+    <p>{{ form.name }}</p>
+    <p>{{ form.email }}</p>
+    <p>{{ form.message }}</p>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 import "@/styles/contact.css";
 
 export default {
   title: "Sam Hookstra Portfolio | Contact",
   data: function () {
     return {
-      name: "Sam",
-      email: "email@email.com",
-      message: "",
+      form: {
+        name: "",
+        email: "",
+        message: "",
+      },
     };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" },
+      };
+      axios.post(
+        "/",
+        this.encode({
+          "form-name": "ask-question",
+          ...this.form,
+        }),
+        axiosConfig
+      );
+    },
   },
 };
 </script>

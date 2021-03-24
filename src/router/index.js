@@ -4,6 +4,9 @@ import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
+// 404 error on page refresh fix found here (public/_redirects file):
+// https://www.youtube.com/watch?v=C3FQoj7cw4s
+
 const routes = [
   {
     path: "/",
