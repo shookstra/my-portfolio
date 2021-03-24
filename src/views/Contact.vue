@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <h1 class="contact-form-header">Contact (Work in progress)</h1>
+    <h1 class="contact-form-header">Contact</h1>
     <form
       name="ask-question"
       method="post"
@@ -141,14 +141,28 @@ export default {
   },
   methods: {
     validateInputs() {
+      // used this stackoverflow article to find an email regex:
+      // https://stackoverflow.com/questions/49917664/regex-pattern-html-email
+      let emailRegex = new RegExp(
+        "(?!test@test.com$)[a-z0-9._%+-]{3,}@[a-z]{3,}.[a-z]{2,}(?:.[a-z]{2,})?"
+      );
+
       if (!this.form.name) {
         this.errors.name = "Please enter your name.";
+      } else {
+        this.errors.name = "";
       }
       if (!this.form.email) {
         this.errors.email = "Please enter your email.";
+      } else if (emailRegex.exec(this.form.email) === null) {
+        this.errors.email = "Please enter a valid email.";
+      } else {
+        this.errors.email = "";
       }
       if (!this.form.message) {
         this.errors.message = "Please enter a message.";
+      } else {
+        this.errors.message = "";
       }
     },
     encode(data) {
@@ -159,25 +173,31 @@ export default {
         .join("&");
     },
     handleSubmit() {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" },
-      };
-      axios
-        .post(
-          "/",
-          this.encode({
-            "form-name": "ask-question",
-            ...this.form,
-          }),
-          axiosConfig
-        )
-        .then((response) => {
-          console.dir(response);
-        })
-        .catch((error) => {
-          console.error(error.message);
-          this.errors.request = error.message;
-        });
+      if (
+        !this.errors.name &&
+        !this.errors.email &&
+        !this.errors.message & !this.errors.request
+      ) {
+        const axiosConfig = {
+          header: { "Content-Type": "application/x-www-form-urlencoded" },
+        };
+        axios
+          .post(
+            "/",
+            this.encode({
+              "form-name": "ask-question",
+              ...this.form,
+            }),
+            axiosConfig
+          )
+          .then((response) => {
+            console.dir(response);
+          })
+          .catch((error) => {
+            console.error(error.message);
+            this.errors.request = error.message;
+          });
+      }
     },
   },
 };
