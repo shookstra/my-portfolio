@@ -75,6 +75,36 @@
 
 .social-links {
   text-align: center;
+  font-size: 1.15rem;
+}
+
+.submit-error-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.submit-error-message {
+  color: #e84a5f;
+  font-size: 1.1rem;
+}
+
+.close-button {
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 100px;
+  height: 35px;
+  width: 35px;
+  font-size: 1.5rem;
+  transition: background 250ms ease;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: #e84a5f;
 }
 
 @media only screen and (max-width: 360px) {
