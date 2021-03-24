@@ -98,13 +98,16 @@
   height: 35px;
   width: 35px;
   font-size: 1.5rem;
-  transition: background 250ms ease;
+  transition: opacity 250ms ease;
   cursor: pointer;
+  background: none;
+  color: #d3d3d3;
+  opacity: 0.3;
 }
 
 .close-button:hover,
 .close-button:focus {
-  background-color: #e84a5f;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 360px) {
