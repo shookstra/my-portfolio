@@ -5,7 +5,7 @@
       name="ask-question"
       method="post"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      netlify-honeypot="bot-field"
       class="contact-form"
       @submit.prevent="handleSubmit"
     >
