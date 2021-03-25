@@ -2,6 +2,7 @@
   <div class="projects-container">
     <ul class="project-list">
       <h1 class="mb-10 projects-header">Projects</h1>
+      <div class="bar"></div>
       <li class="project-card">
         <a
           href="https://risk.optimized-systems.com/Controller.php"

@@ -1,6 +1,6 @@
 <template>
-  <div class="experience">
-    <div class="experience-container">
+  <div class="experience-container">
+    <div class="experience-list">
       <h1 class="experience-header">Education.</h1>
       <div class="bar"></div>
       <ul class="experience-list">
@@ -18,6 +18,20 @@
           <h2>Software Engineer</h2>
           <h4>Optimized Systems - Omaha, NE</h4>
           <p>July 2020 to March 2021</p>
+          <ul class="experience-list-item-bullets">
+            <li>
+              Improved live energy reading dashboard by updating styling, adding
+              reporting functionality, and adding new features.
+            </li>
+            <li>
+              Added enhancements and bug fixes to other versions of the
+              dashboard
+            </li>
+            <li>
+              Created COVID-19 site for users to assess the risks their
+              buildings face
+            </li>
+          </ul>
         </li>
         <li class="experience-list-item">
           <h2>Software Engineer</h2>

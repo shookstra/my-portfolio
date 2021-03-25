@@ -6,13 +6,14 @@
 }
 
 .experience-container {
-  padding: 90px 10px;
+  position: absolute;
+  top: 0;
+  padding: 90px 30px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 60%;
-  margin: 0 auto;
+  align-items: center;
+  width: 100%;
 }
 
 .experience-header {
@@ -25,13 +26,12 @@
   text-align: left;
   list-style: none;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .experience-list-item {
   margin: 5px 0px;
   padding: 5px 0px 15px 0px;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .experience-list-item-bullets {
@@ -47,5 +47,11 @@
 @media only screen and (max-width: 768px) {
   .experience-container {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .experience-container {
+    padding: 80px 10px;
   }
 }
