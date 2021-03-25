@@ -6,6 +6,7 @@
       <ul class="experience-list">
         <li class="experience-list-item">
           <h2>Associate in Information Technology</h2>
+          <h3>Focus on PC and Web Development</h3>
           <h4>Southeast Community College - Lincoln, NE</h4>
           <p>October 2017 to December 2019</p>
         </li>
@@ -20,16 +21,16 @@
           <p>July 2020 to March 2021</p>
           <ul class="experience-list-item-bullets">
             <li>
-              Improved live energy reading dashboard by updating styling, adding
-              reporting functionality, and adding new features.
+              Improved live energy reading ASP.Net MVC dashboard by updating
+              styling, adding reporting functionality, and adding new features.
             </li>
             <li>
               Added enhancements and bug fixes to other versions of the
               dashboard
             </li>
             <li>
-              Created COVID-19 site for users to assess the risks their
-              buildings face
+              Created COVID-19 site using PHP and JavaScript for users to assess
+              the risks their buildings face
             </li>
           </ul>
         </li>

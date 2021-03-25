@@ -28,6 +28,14 @@
             Read details about which precautions are more effective and why.
           </li>
         </ul>
+        <div class="project-logos">
+          <img
+            src="../assets/php-logo-bigger.png"
+            height="45"
+            class="image-background"
+          />
+          <img src="../assets/JSLogo.png" height="45" />
+        </div>
       </li>
       <li class="project-card">
         <h2>Pantry Stock</h2>
@@ -50,6 +58,20 @@
           <li>Search for items in your pantry using keywords.</li>
           <li>Create a list of items needed on your next trip to the store.</li>
         </ul>
+        <div class="project-logos">
+          <img src="../assets/ReactLogo.png" height="45" />
+          <img src="../assets/NodeLogo.png" height="75" />
+          <img
+            src="../assets/herokuLogo.png"
+            height="45"
+            class="image-background"
+          />
+          <img
+            src="../assets/NetlifyLogo.png"
+            height="45"
+            class="image-background"
+          />
+        </div>
       </li>
       <li class="project-card">
         <a
@@ -78,6 +100,14 @@
           </li>
         </ul>
       </li>
+      <div class="project-logos">
+        <img src="../assets/VueLogo.png" height="45" />
+        <img
+          src="../assets/NetlifyLogo.png"
+          height="45"
+          class="image-background"
+        />
+      </div>
     </ul>
   </div>
 </template>

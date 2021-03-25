@@ -19,7 +19,7 @@
 
 .project-card {
   border-radius: 5px;
-  margin: 10px 0px;
+  margin: 15px 0px;
   max-width: 700px;
 }
 
@@ -29,6 +29,25 @@
 
 .project-card-subheader {
   margin-top: 10px;
+}
+
+.project-logos {
+  display: flex;
+  align-items: center;
+  padding: 3px 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.project-logos *:nth-child(even) {
+  margin: 0px 10px;
+}
+
+.image-background {
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 768px) {
