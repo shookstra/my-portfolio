@@ -20,7 +20,7 @@
 .project-card {
   border-radius: 5px;
   margin: 15px 0px;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .project-feature-list {
@@ -58,6 +58,15 @@
 
 @media only screen and (max-width: 360px) {
   .projects-container {
-    padding: 80px 10px;
+    padding: 80px 20px;
+  }
+
+  .project-card {
+    max-width: 300px;
+  }
+
+  .project-logos {
+    overflow-x: scroll;
+    padding-bottom: 10px;
   }
 }
