@@ -50,21 +50,14 @@
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .projects-container {
-    padding: 80px 20px;
+    padding: 80px 10px;
   }
-  .project-card {
-    max-width: 350px;
-  }
-}
 
-@media only screen and (max-width: 360px) {
   .project-logos {
     overflow-x: scroll;
     padding-bottom: 10px;
-  }
-  .project-card {
     max-width: 300px;
   }
 }
