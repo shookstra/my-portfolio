@@ -7,7 +7,7 @@
         <a
           href="https://risk.optimized-systems.com/Controller.php"
           class="project-card-header h2 mb-5"
-          >COVID Mitigation Matrix</a
+          >COVID Mitigation Matrix (No longer available)</a
         >
         <p>
           A dashboard that allows businesses to view infographics regarding the

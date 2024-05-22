@@ -17,6 +17,30 @@
       <ul class="experience-list">
         <li class="experience-list-item">
           <h2>Software Engineer</h2>
+          <h4>TEAM Software - Omaha, NE</h4>
+          <p>June 2021 to Present</p>
+          <ul class="experience-list-item-bullets">
+            <li>
+              Complete stories to add features and resolve bugs for VB.NET/C# 
+              workforce management software
+            </li>
+            <li>
+              Maintain database by writing and updating queries using SSMS
+            </li>
+            <li>
+              Update back-end APIs and front-end UI according to acceptance criteria
+            </li>
+            <li>
+              Collaborate with team members from project planning, implementing updates, 
+              testing, to releasing finished product
+            </li>
+            <li>
+              Present at sprint demo meetings to show off team progress
+            </li>
+          </ul>
+        </li>
+        <li class="experience-list-item">
+          <h2>Software Engineer</h2>
           <h4>Optimized Systems - Omaha, NE</h4>
           <p>July 2020 to March 2021</p>
           <ul class="experience-list-item-bullets">
